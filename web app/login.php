@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-// Static credentials (in a real application, use a database)
-$valid_username = "user";
-$valid_password = "password";
+// Static credentials 
+$valid_username = "israth";
+$valid_password = "1234";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
