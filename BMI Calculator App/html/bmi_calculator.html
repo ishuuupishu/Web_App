@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <form action="../php/process_bmi.php" method="POST">
+        <h2>BMI Calculator</h2>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="number" name="age" placeholder="Age" required>
+        <select name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="number" name="height" placeholder="Height (in meters)" step="0.01" required>
+        <input type="number" name="weight" placeholder="Weight (in kg)" step="0.1" required>
+        <button type="submit">Calculate BMI</button>
+    </form>
+</body>
+</html>
